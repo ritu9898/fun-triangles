@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+  <head>
+    <title>Triangles</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="/index.js"></script>
+    <style>
+      .container {
+        text-align: center;
+      }
+      .input-group {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }  
+      h2, h4 {
+        margin: 30px;
+      }   
+    </style>
+  </head>
+  <body>
+    <div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Fun With Triangles</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./inedx.html">Is Triangle?</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./quiz.html">Quiz</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./hypotenuse.html">Hypotenuse</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./area.html">Area of Triangle</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="container">
+      <h2>Calculate Hypotenuse of a Triangle</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <h3>Enter base value (a) :</h3>
+        </div>
+        <div class="col-md-4">
+          <div class="input-group mb-3">
+            <input type="number" min="0" class="form-control" id="base_a" required>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-md-4">
+          <h3>Enter height value (b) :</h3>
+        </div>
+        <div class="col-md-4">
+          <div class="input-group mb-3">
+            <input type="number" min="0" class="form-control" id="height_b" required>
+          </div>
+        </div>
+      </div>
+
+      <button class="btn btn-primary" onclick="calculate_hypotenuse()">Calculate</button>
+      <h4 id="ans"></h4>
+    </div>
+  </body>
+</html>
